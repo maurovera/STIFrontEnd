@@ -1,0 +1,78 @@
+<h1> Mauro Vera</h1>
+ <body ng-controller="PruebaController">
+    <h1>{{mensaje}}</h1>
+
+    <div ng-if="!asignaturas">
+    	Loading....
+    </div>
+
+    <div ng-if="asignaturas">
+    	<div class="table-responsive">
+		    <table class="table  table-striped">
+		        <thead>
+		            <tr>
+		                <th>#</th>
+		                <th>Descripcion</th>
+		                <th>Editar</th>
+		                <th>Eliminar</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr ng-repeat="asignatura in asignaturas">
+		            	<td>{{asignatura.idAsignatura}}</td>
+		            	<td>{{asignatura.descripcion}}</td>
+		            	<td><a class="btn btn-success" ng-click="agregar()"><i class="fa fa-pencil"></i></a></td>
+		            	<td><a class="btn btn-danger" ng-click="eliminar(asignatura.idAsignatura)"><i class="fa fa-remove"></i></a></td>
+		            </tr>
+		        </tbody>
+		    </table>
+		</div>
+    </div>
+
+    <div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newModal">
+			  <i class="fa fa-check"></i>&nbsp;Crear
+			</button>
+    </div>
+
+<div class="modal fade" id="newModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>
+		    <section class="form-wrapper">
+		        <div class="top-block">
+		            <h2 class="title-top">Formulario de Prueba</h2>
+		            <p>Me chupa la pija vo y tu vieja</p>
+		        </div>
+
+		        <form class="wrapper form-horizontal" role="form">
+		            
+
+		            <div class="form-group">
+		                <label for="buscar_item_codigo" class="col-sm-3 control-label">Campo Input:</label>
+		                <div class="col-sm-8">
+		                    <input type="text" class="form-control" id="buscar_item_codigo" ng-model="formData.descripcion">
+		                    <p class="help-block">Este campo sirve para bla bla bla .</p>
+		                </div>
+		            </div>
+
+		        </form>
+		    </section>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-default" ng-click="agregar()"><i class="fa fa-save"></i>&nbsp;Guardar</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ </body>

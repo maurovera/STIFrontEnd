@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/**
+* Colores base
+*/
+
+$text-color: #333538;
+$text-invert-color: #fff;
+$pane-bg:#a94442; //#A71F2A;
+$pane-active-bg:#98252f;
+$pane-border:#873635;
+$pane-color:$text-invert-color;
+$pane-invert-bg:#222;
+$pane-invert-active-bg:#1a1a1a;
+$pane-invert-border:#1e1e1e;
+$pane-gray-bg:#f4f4f4;
+$pane-gray-color:#868b91;
+$pane-gray-border:#dce1e8;
+$active-color: $pane-bg; //#465f6e;
+$active-border: $pane-border; //#27404d;
+
+/**
+* Colores base
+*/
+
+$brand-primary:$pane-bg;
+$link-color:$text-color;
+$link-hover-color:$text-invert-color;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+//se seobrescriben los colores de boostrap
+//override navbar 
+$navbar-default-bg:$pane-bg;
+$navbar-default-active-bg:$pane-active-bg;
+$navbar-default-border: $pane-border;
+$navbar-default-color:$text-invert-color;
+$navbar-default-link-active-bg:$navbar-default-active-bg;
+$navbar-default-link-hover-bg:$navbar-default-active-bg;
+$navbar-default-link-color:$navbar-default-color;
+$navbar-default-brand-color:$navbar-default-color;
+$navbar-default-link-active-color:$navbar-default-color;
+$navbar-default-link-hover-color:$navbar-default-color;
+$navbar-default-toggle-icon-bar-bg:$navbar-default-color;
+
+/**
+* sidebar colors
+*/
+
+$sidebar-bg:$pane-invert-bg;
+$sidebar-color:$text-invert-color;
+$sidebar-active-bg:$pane-active-bg;
+
+/**
+* override table
+*/
+
+$table-bg-accent: #fff1f1;
+$table-border-color:#efc9c9;
+
+/*
+*pagination
+*/
+
+$pagination-color: $text-color;
+$pagination-bg: $text-invert-color;
+$pagination-border: $table-border-color;
+$pagination-hover-color: $link-hover-color;
+$pagination-hover-bg: $navbar-default-bg;
+$pagination-hover-border: $navbar-default-border;
+$pagination-active-color: $text-invert-color;
+$pagination-active-bg: $brand-primary;
+$pagination-active-border: $brand-primary;
+
+/**
+* Alerts
+*/
+
+$state-success-text: #3c763d !default;
+$state-success-bg: #dff0d8 !default;
+$state-info-text: #31708f !default;
+$state-info-bg: #d9edf7 !default;
+$state-warning-text: #8a6d3b !default;
+$state-warning-bg: #fcf8e3 !default;
+$state-danger-text: #a94442 !default;
+$state-danger-bg: #f2dede !default;
