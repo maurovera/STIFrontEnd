@@ -1,4 +1,4 @@
-# KSASS
+# Planilla
 El proposito de este proyecto es servir como template SASS/CSS para aplicaciones
 
 ## Construcción
